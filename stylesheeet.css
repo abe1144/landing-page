@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto';
+    padding:0;
+    margin:0;
 }
 
 .nav-bar {
@@ -10,7 +12,6 @@ body {
 
 .nav-bar div {
     flex: 1 1 0%;
-    outline: 2px solid black;
 }
 
 .nav-bar .items {
@@ -54,7 +55,6 @@ a:visited {
 }
 
 .side {
-    border-style: solid;
     border-width: 10px 10px;
 }
 
@@ -64,8 +64,8 @@ a:visited {
     color: #F9FAF8; 
 }
 
-.container div {
-    flex: 0.25 0 0%;
+.container .side {
+    flex: 0.25 0 0;
 }
 
 .container .content {
@@ -73,7 +73,50 @@ a:visited {
 }
 
 .hero-text {
-    font-size: 48px;
+    font-size: 60px;
+    color: #F9FAF8; 
+}
+
+.subtext {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.desc {
+    align-content: center;
+}
+
+.image-container {
+    align-content: center;
+}
+.image {
+    height: 250px;
+    align-content: center;
+    justify-items: center;
+    background-color: darkgray;
+}
+
+
+.desc p {
+    margin: 0;
+    padding: 0;
+}
+
+.top-btn {
+    margin-top: 10px;
+    color: #F9FAF8;
+    background-color: #3882f6;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 2px solid #3882f6;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.top-btn:hover {
+    color: #3882f6;
+    border-color: #F9FAF8;
+    background-color: #F9FAF8;
 }
 
 .subtext {
@@ -96,7 +139,148 @@ a:visited {
 }
 
 .main div {
-    outline: 2px solid black;
     flex: 1 1 0%;
+}
 
+.hero-text.info {
+    color:#1F2937;
+}
+
+.referral {
+    background-color: #E5E7EB;
+}
+
+.quote, .author, .desc {
+    color: black;
+}
+
+
+.features,.contact {
+    background-color: #F9FAF8;
+}
+.information {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+.images {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    outline: 4px solid blue;
+    justify-content: center;
+}
+
+.feature-container {
+    align-items: center;
+    justify-items: center;
+    width: 50px;
+    padding: 0px 100px 0px 100px;
+}
+
+.quote {
+    text-align: justify;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color:#1F2937;
+    padding: 0px 250px 0px 250px;
+}
+
+.author {
+    text-align: right;
+    padding-right:250px;
+    font-weight: bold;
+    font-size:18px;
+}
+.referral {
+    align-items: center;
+}
+
+.contact-section {
+
+    justify-items: center;
+    align-content: center;
+}
+
+.contact-box {
+    width: 50vw;
+    /* width: 1200px; */
+    height: 150px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    /* outline: 2px solid black; */
+    display:flex;
+    justify-content: center;
+}
+
+.features, .referral, .about, .contact-section {
+    min-height: 400px;
+}
+
+.contact-title {
+    font-size:32px;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+
+.contact-subtext {
+    font-size: 18px;
+    font-weight:lighter;
+    padding:0;
+    margin:0;
+}
+
+
+.text {
+    flex:4;
+    align-content: center;
+}
+
+.btn {
+    align-items: center;
+    justify-content: flex-end;
+    display:flex;
+    flex:1;
+}
+
+.spacer {
+    flex:1;
+}
+.button {
+    justify-content: right;
+    color: #F9FAF8;
+    background-color: #3882f6;
+    /* border: #F9FAF8; */
+    border-radius: 4px;
+    font-size:14px;
+    padding: 6px 24px;
+    cursor:pointer;
+    border: 2px solid #F9FAF8;
+}
+
+.button:hover {
+    color: #3882f6;
+    background-color: #F9FAF8;
+}
+
+
+footer {
+    background-color: #1F2937;
+    justify-items: center;
+    height:8vh;
+    align-content: center;
+}
+
+.copyright {
+    color:#F9FAF8;
+    font-size: 12px;
 }
